@@ -1,15 +1,17 @@
-package com.devcamp.flametalk;
+package com.devcamp.flametalk.chatroom;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @EnableDiscoveryClient
+@EnableJpaAuditing
 @SpringBootApplication
-public class ChatApplication {
+public class ChatroomApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(ChatApplication.class, args);
+    SpringApplication.run(ChatroomApplication.class, args);
   }
 
 }
